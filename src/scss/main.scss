@@ -1,3 +1,9 @@
-@import "vars";
-@import "interface";
+@import "utils/normalize";
+@import "utils/vars";
+@import "utils/font";
+
+
+@import "templates/interface";
+@import "templates/header";
+@import "templates/hero";
 @import "~bootstrap/scss/bootstrap";

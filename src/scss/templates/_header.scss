@@ -1,0 +1,20 @@
+.header {
+  height: 138px;
+  background-color: $gray-900;
+  &-navbar {
+    height: 100%;
+  }
+  &-contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    &_tel{
+      padding-bottom: 10px;
+      font-size: 26px;
+      text-decoration: none;
+    }
+    &_callback {
+      font-size: 14px !important;
+    }
+  }
+}
