@@ -1,8 +1,18 @@
 .header {
   height: 138px;
   background-color: $gray-900;
+  border-bottom: 1px solid black;
   &-navbar {
     height: 100%;
+      &_routes {
+        padding-left: 10%;
+    }
+    &_logo {
+      padding-right: 10px;
+    }
+    &-toggler {
+
+    }
   }
   &-contacts {
     display: flex;
@@ -10,11 +20,102 @@
     align-items: end;
     &_tel{
       padding-bottom: 10px;
-      font-size: 26px;
+      font-size: 22px;
       text-decoration: none;
     }
     &_callback {
       font-size: 14px !important;
+      border: 2px solid $primary !important;
+
+    }
+  }
+}
+.nav {
+  &-link {
+    text-transform: uppercase;
+    color: $white !important;
+    font-size: 14px !important;
+    &:focus {
+      color: $primary!important;
+    }
+    &:hover {
+      color: $primary!important;
+    }
+  }
+}
+
+@media (max-width: 1399.98px) {
+  .header {
+    &-navbar {
+      &_routes {
+        justify-content: center;
+        padding-left: 0;
+      }
+    }
+  }
+}
+@media (max-width: 1199.98px) {
+  .header {
+    &-navbar {
+      &_routes {
+        //width: 90% !important;
+        flex-wrap: wrap;
+        padding-left: 0;
+      }
+    }
+      &_logo {
+        padding-right: 0;
+      }
+    &-contacts {
+    width: 170px;
+     &_tel {
+        font-size: 18px;
+        padding-bottom: 4px;
+      }
+      &_callback {
+        font-size: 12px !important;
+      }
+    }
+
+  }
+  .navbar-nav {
+    justify-content: center;
+    flex-wrap: wrap;
+
+  }
+}
+
+@media (max-width: 991.98px) {
+  .header {
+    height: auto;
+    min-height: 80px;
+    &-navbar {
+      padding-top: 20px !important;
+    }
+    &-contacts {
+      font-weight: bold;
+      padding-top: 12px;
+      width: 100%;
+      //display: none;
+      flex-direction: row;
+      justify-content: space-between;
+      &_tel {
+        overflow-wrap: normal !important;
+      }
+    }
+
+
+  }
+  .navbar {
+    &-toggler {
+      &-icon {
+        color: $primary;
+      }
+      &.collapsed {
+      }
+    }
+    &-brand {
+      //width: 100%;
     }
   }
 }

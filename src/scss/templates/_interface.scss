@@ -1,9 +1,23 @@
 body {
-  font-family: 'Montserrat Regular', sans-serif !important;
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 400 !important;
 }
 .container {
   height: 100%;
 }
-btn {
+.btn {
+  //display: flex !important;
   background-color: $primary;
+  text-transform: uppercase !important;
+  font-size: 18px !important;
+  padding: 14px 50px !important;
+  //height: auto !important;
+  &-primary {
+    color: $white !important;
+    font-size: 18px !important;
+    padding: 14px 50px !important;
+  }
+}
+a {
+  text-transform: uppercase !important;
 }

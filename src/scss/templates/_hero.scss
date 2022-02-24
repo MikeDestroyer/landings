@@ -1,3 +1,22 @@
 .hero {
+  background: url("../assets/images/background.png");
+  background-position: center;
+  height: 650px;
+  &-block {
+    height: 100%;
+    &_conent{
+      display: flex !important;
+      flex-direction: column !important;
+      justify-content: center !important;
+      height: auto;
 
+    }
+    &_title {
+      display: flex;
+    }
+    &_subtitle {
+      display: flex;
+    }
+    color: $white;
+  }
 }

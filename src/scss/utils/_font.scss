@@ -1,8 +1,15 @@
 @font-face {
-  font-family: 'Montserrat Regular';
+  font-family: 'Montserrat';
+  src: local('../fonts/Montserrat Regular'), local('Montserrat-Regular'),
+  url('../fonts/Montserrat-Regular.woff') format('woff');
+
+  font-weight: normal;
   font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url('../fonts/montserrat-v15-latin_cyrillic-regular.woff2') format('woff2'),
-  url('../fonts/montserrat-v15-latin_cyrillic-regular.woff') format('woff');
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: local('../fonts/Montserrat Bold'), local('Montserrat-Bold'),
+  url('../fonts/Montserrat-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
 }
