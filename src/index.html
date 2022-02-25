@@ -13,7 +13,8 @@
                 <a class="header-navbar_logo navbar-brand" href="#">
                     <img src=<%=require("./assets/images/logo.png")%> alt="" width="232" height="29">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="header-navbar_routes collapse navbar-collapse" id="navbarNav">
@@ -35,22 +36,100 @@
                         </li>
                     </ul>
                 </div>
-        <div class="header-contacts">
-            <a class="header-contacts_tel link-primary">+375 44 772 91 63</a>
-            <button class="header-contacts_callback btn btn-outline-primary">Перезвоните мне</button>
-        </div>
+                <div class="header-contacts">
+                    <a class="header-contacts_tel link-primary">+375 44 772 91 63</a>
+                    <button class="header-contacts_callback btn btn-outline-primary">Перезвоните мне</button>
+                </div>
             </div>
         </nav>
     </div>
 </header>
 <section class="hero">
     <div class="container">
-        <div class="hero-block row align-items-center">
-            <div class="hero-block_content">
-            <h1 class="hero-block_title">Ищешь профессию будущего?</h1>
-            <p class="hero-block_subtitle">Ждем тебя в EdTech</p>
-            <button class="hero-block_modal btn btn-primary">Хочу здесь работать</button>
-            <button class="hero-block_link btn btn-outline-primary">Посмотореть вакансии</button>
+        <div class="hero-block d-flex align-items-center">
+            <div class="hero-block_content d-flex flex-column align-items-center">
+                <h1 class="hero-block_title">Ищешь профессию будущего?</h1>
+                <p class="hero-block_subtitle">Ждем тебя в EdTech</p>
+                <div class="hero-block_buttons">
+                    <button class="hero-block_btn-modal btn btn-primary">Хочу здесь работать</button>
+                    <button class="hero-block_btn-link btn btn-outline-primary">Посмотореть вакансии</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="about">
+    <div class="container">
+        <div class="about-us">
+            <div class="about-us-stats row">
+                <div class="about-us-stats-content col-sm-12 col-md-4">
+                    <div class="about-us-stats-content_line txt-line"></div>
+                    <span class="about-us-stats-content_text txt-gray">сотрудников</span>
+                    <span class="about-us-stats-content_num">70+</span>
+                </div>
+                <div class="about-us-stats-content col-sm-12 col-md-4">
+                    <div class="about-us-stats-content_line txt-line"></div>
+                    <span class="about-us-stats-content_text txt-gray">лет на рынке</span>
+                    <span class="about-us-stats-content_num">13</span>
+                </div>
+                <div class="about-us-stats-content col-sm-12 col-md-4">
+                    <div class="about-us-stats-content_line txt-line"></div>
+                    <span class="about-us-stats-content_text txt-gray">средний возраст сотрудников</span>
+                    <span class="about-us-stats-content_num">29 лет</span>
+                </div>
+            </div>
+            <div class="about-us-content row">
+                <span class="about-us-content_title col-12">О НАС</span>
+                <p class="about-us-content_text txt-gray col-sm-12 col-lg-6">
+                    Компания «CREACEPT» уже 13 лет занимается разработкой и продвижением онлайн-школ &nbsp;EdTech-индустрии.<br><br>Самым
+                    востребованным и перспективным направлением является обучающий проект по торговле на финансовых,
+                    фондовых, криптовалютных рынках «Мир трейдинга». В нашей команде работает &gt;70 человек. И сегодня
+                    мы — лидеры на рынке СНГ в этой нише.<br><br>У образовательной платформы «Мир Трейдинга» &nbsp;нет
+                    аналогов. Наша цель — это повысить уровень финансовой грамотности и помочь трейдерам профессионально
+                    расти.
+                </p>
+                <div class="about-us-content-image col-sm-12 col-lg-6">
+                    <img src="<%=require("./assets/images/woman.jpg")%>" alt="" class="about-us-content-image_img">
+                </div>
+            </div>
+        </div>
+        <div class="about-people row">
+            <div class="about-people-stats col-sm-12 col-lg-6">
+                <div class="about-people-stats-block row">
+                <div class="about-people-stats-content col-sm-12 col-md-6">
+                    <div class="about-people-stats-content_line txt-line"></div>
+                    <span class="about-people-stats-content_text txt-gray">Имеют или получают высшее образование</span>
+                    <span class="about-people-stats-content_num">92+</span>
+                    <div class="about-people-stats-content-image">
+                        <img src="<%=require("./assets/images/people1.png")%>" alt=""
+                        class="about-people-content-image_img">
+                    </div>
+                </div>
+                <div class="about-people-stats-content col-sm-12 col-md-6">
+                    <div class="about-people-stats-content_line txt-line"></div>
+                    <span class="about-people-stats-content_text txt-gray">Работают в «Мир Трейдинга» более двух лет</span>
+                    <span class="about-people-stats-content_num">70%</span>
+                    <div class="about-people-stats-content-image">
+                        <img src="<%=require("./assets/images/people2.png")%>" alt=""
+                        class="about-people-content-image_img">
+                    </div>
+
+                </div>
+                </div>
+
+            </div>
+            <div class="about-people-content col-sm-12 col-lg-6">
+                <div class="about-people-content-block row">
+                <span class="about-people-content_title col-12">ЛЮДИ</span>
+                <p class="about-people-content_text txt-gray col-12">
+                    <strong>«CREACEPT»</strong> – это команда прогрессивных и целеустремленных людей. Мы ценим развитие,
+                    профессиональный драйв и проактивность. Команда «CREACEPT» видит общую цель и вместе идет к
+                    результату.<br><br>Мы ждем в нашу команду как опытных, так и начинающих, но амбициозных сотрудников.
+                    Если вам интересны сфера финансовых, фондовых, криптовалютных и иных рынков, если вы готовы
+                    вкладывать силы и энергию в получение новых знаний и навыков &nbsp;— добро пожаловать к нам!
+                </p>
+                <button class="about-people-content_btn-modal btn btn-primary col-sm-12 col-lg-6">Хочу в команду</button>
+                </div>
             </div>
         </div>
     </div>

@@ -21,11 +21,20 @@
     &_tel{
       padding-bottom: 10px;
       font-size: 22px;
+      font-weight: 500;
       text-decoration: none;
+      transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out !important;
+      &:hover, :focus {
+        cursor: pointer !important;
+        background-color: transparent !important;
+        color: $white !important;
+        border-color: $white !important;
+      }
     }
     &_callback {
       font-size: 14px !important;
-      border: 2px solid $primary !important;
+      padding: 8px 20px !important;
+
 
     }
   }
@@ -35,6 +44,7 @@
     text-transform: uppercase;
     color: $white !important;
     font-size: 14px !important;
+    font-weight: 500;
     &:focus {
       color: $primary!important;
     }
@@ -74,6 +84,7 @@
       }
       &_callback {
         font-size: 12px !important;
+        padding: 8px 12px !important;
       }
     }
 
@@ -96,7 +107,6 @@
       font-weight: bold;
       padding-top: 12px;
       width: 100%;
-      //display: none;
       flex-direction: row;
       justify-content: space-between;
       &_tel {

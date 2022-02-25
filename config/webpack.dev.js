@@ -12,11 +12,13 @@ module.exports = {
         publicPath: "/",
     },
     devServer: {
-        open: true,
+            open: true,
         static:{
+            directory: path.join(__dirname, '../src'),
             watch: true,
-            directory: '../src'
-        }
+        },
+        compress: true,
+        port: 9000,
     },
     module: {
         rules: [
@@ -46,7 +48,7 @@ module.exports = {
         template: path.resolve(__dirname, '../src/index.html'),
             title: "CREACEPT",
             filename: 'index.html',
-        favicon: './src/static/favico.png',
+        favicon: './src/static/favicon.png',
         },
 
     )],
