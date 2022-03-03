@@ -1,9 +1,16 @@
 .vacancies {
-  padding: 80px 0;
+  padding: 100px 0;
   &__title{
     padding-bottom: 30px;
     font-size: 48px;
-    font-weight: 600;
+    font-weight: 700;
     color: $gray-txt;
   }
+}
+
+.accordion-button {
+  font-size: 20px !important;
+  font-weight: bold !important;
+  line-height: 1.5999999999999999 !important;
+  letter-spacing: 0.1142857142857143em !important;
 }

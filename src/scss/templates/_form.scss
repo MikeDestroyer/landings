@@ -1,0 +1,32 @@
+.form {
+  &-text {
+    border-bottom: 1px solid rgba(82,92,105,0.11);
+  }
+  &__block {
+    padding: 1rem 0 !important !important;
+    text-align: center;
+  }
+
+  &__padding {
+    padding: 14px 30px;
+  }
+  &__input {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 16px;
+    color: $gray-txt;
+    border: none !important;
+    border-bottom: 2px solid rgba(82,92,105,0.11) !important;
+    &:focus {
+      border: none !important;
+      border-bottom: 2px solid $primary !important;
+
+    }
+    &:focus-visible {
+      border: none !important;
+      //border-bottom: 2px solid $primary !important;
+
+    }
+  }
+
+}
