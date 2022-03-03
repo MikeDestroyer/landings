@@ -17,9 +17,11 @@ module.exports = {
             directory: path.join(__dirname, '../src'),
             watch: true,
         },
+        hot: true,
         compress: true,
         port: 9000,
     },
+    devtool: 'eval-source-map',
     module: {
         rules: [
             {

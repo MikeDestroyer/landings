@@ -6,7 +6,7 @@
   "scripts": {
     "build": "webpack  --config config/webpack.prod.js",
     "watch": "webpack --watch  --config config/webpack.dev.js",
-    "hot": "webpack serve --hot --config config/webpack.dev.js"
+    "hot": "webpack serve --config config/webpack.dev.js"
   },
   "keywords": [],
   "author": "",

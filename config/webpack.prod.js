@@ -47,7 +47,7 @@ module.exports = {
                 ],
             },
             {
-                test: /\.png/,
+                test: /\.(png|svg|jpe?g|gif)$/,
                 type: 'asset/resource'
             },
         ],
@@ -56,7 +56,7 @@ module.exports = {
         new HtmlWebpackPlugin({
                 template: path.resolve(__dirname, '../src/index.html'),
                 filename: 'index.html',
-                favicon: './src/static/favicon.ico',
+                favicon: './src/static/favicon.png',
             }),
         new CleanWebpackPlugin({
             cleanStaleWebpackAssets: false,

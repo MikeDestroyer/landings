@@ -1,0 +1,36 @@
+.footer {
+  color: $white;
+  background-color: #1c1f1d;
+  padding-top: 60px;
+  padding-bottom: 50px;
+  &__title {
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+  &-block {
+  }
+  &-info {
+    &-block {
+      display: flex;
+      flex-direction: row;
+      padding-bottom: 4px;
+    }
+    &-svg {
+      width: 33px;
+    }
+    &__svg {
+      min-width: 100%;
+      fill: $primary;
+    }
+    &__text {
+      width: 80%;
+    }
+  }
+    &__map {
+      background-color: #00b5a7;
+      height: 150px;
+      width: auto;
+    }
+
+}

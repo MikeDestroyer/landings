@@ -1,0 +1,15 @@
+.company {
+  padding-top: 80px;
+  padding-bottom: 100px;
+  &__title {
+    font-size: 48px;
+    text-align: center;
+    font-weight: 700;
+    color: $gray-txt;
+  }
+  &__slider {
+    width: auto;
+    height: 468px;
+    background-color: #333333;
+  }
+}

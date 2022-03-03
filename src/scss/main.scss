@@ -1,6 +1,6 @@
-@import "utils/normalize";
 @import "utils/vars";
 @import "utils/font";
+@import "utils/normalize";
 
 
 @import "templates/interface";
@@ -11,4 +11,6 @@
 @import "templates/vacancies";
 @import "templates/contacts";
 @import "templates/form";
+@import "templates/company";
+@import "templates/footer";
 @import "~bootstrap/scss/bootstrap";
