@@ -6,7 +6,6 @@ const {CleanWebpackPlugin} = require("clean-webpack-plugin")
 
 module.exports = {
     mode: "production",
-
     entry: {
         path: path.resolve(__dirname, '../src')
     },
@@ -14,16 +13,7 @@ module.exports = {
         path: path.resolve(__dirname, '../dist'),
         filename: 'js/[name].js',
         // publicPath: "/",
-
     },
-    // devServer: {
-    //     hot: true,
-    //     open: true,
-    //     static: {
-    //         watch: true,
-    //         directory: '../src'
-    //     }
-    // },
     module: {
         rules: [
             {
@@ -50,11 +40,16 @@ module.exports = {
                 test: /\.(png|svg|jpe?g|gif)$/,
                 type: 'asset/resource'
             },
+            {
+                test: /\.(woff|woff2|eot|ttf|otf)$/i,
+                type: "asset/inline",
+            },
         ],
     },
     plugins: [
         new HtmlWebpackPlugin({
                 template: path.resolve(__dirname, '../src/index.html'),
+                title: "CREACEPT",
                 filename: 'index.html',
                 favicon: './src/static/favicon.png',
             }),
