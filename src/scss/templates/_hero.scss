@@ -41,6 +41,20 @@
     &_btn-link {
       width: 350px;
     }
+    &__scroll-down {
+      padding-top: 70px;
+      width: 30px;
+      height: auto;
+      & > svg {
+        fill: $white;
+        //opacity: 0.8;
+      }
+      &:hover {
+        animation-name: hvr-buzz-out;
+        animation-duration: .75s;
+        animation-iteration-count: 1;
+      }
+    }
   }
 }
 

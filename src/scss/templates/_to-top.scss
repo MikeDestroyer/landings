@@ -1,0 +1,47 @@
+.to-top {
+  &__span {
+    position: relative;
+    top: 10px;
+    text-transform: uppercase;
+  }
+}
+
+#to-top {
+  position: fixed;
+  display: inline-block;
+  bottom: 30px;
+  right: calc(2%);
+  width: 126px;
+  height: 40px;
+  z-index: 1000;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  color: $white;
+  background: $primary;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .3s ease-in-out;
+}
+#to-top:hover {
+  background-color: $primary-darken;
+}
+
+#to-top svg {
+  position: relative;
+  top: 8px;
+  fill: #fff;
+  transition: all .3s ease-in-out;
+}
+
+#to-top:hover svg {
+  cursor: pointer;
+  fill: #fff;
+  transition: all .3s ease-in-out;
+}
+
+#to-top.show {
+  opacity: 0.8;
+  visibility: visible;
+  right: calc(2%);
+}
