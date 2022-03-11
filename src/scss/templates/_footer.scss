@@ -4,6 +4,8 @@
   padding-top: 60px;
   padding-bottom: 50px;
   &__title {
+    display: inline-block;
+    padding-bottom: 10px;
     font-weight: 700;
     font-size: 18px;
     text-transform: uppercase;
@@ -14,7 +16,7 @@
     &-block {
       display: flex;
       flex-direction: row;
-      padding-bottom: 4px;
+      padding-bottom: 10px;
       align-items: center;
     }
     &-svg {
@@ -25,12 +27,13 @@
       fill: $primary;
     }
     &__text {
+      padding-left: 16px;
       width: 80%;
     }
   }
     &__map {
       //background-color: #00b5a7;
-      height: 150px;
+      height: 220px;
       width: auto;
       padding-top: 20px;
     }

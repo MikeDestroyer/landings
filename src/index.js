@@ -1,9 +1,11 @@
 import * as bootstrap from 'bootstrap';
+import * as jquery from 'jquery';
 
 import './scss/main.scss';
 import './modules/ymap';
 
 
+const $ = require( "jquery" );
 
 ymaps.ready(init);
 function init(){
@@ -19,7 +21,7 @@ function init(){
             coordinates: pos // координаты точки
         }
     }, {
-        preset: "islands#redDotIcon",
+        preset: "islands#redIcon",
         cursor: "pointer",
     });
 
@@ -61,28 +63,26 @@ function scrollTo(to, duration = 700) {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-    let btn = document.querySelector('#to-top');
+    const btnUp = document.querySelector('#to-top');
+    const btnDown = document.querySelector('#to-down');
+
+0
     window.addEventListener('scroll', function () {
-        // Если прокрутили дальше 599px, показываем кнопку
-        if (pageYOffset > 798) {
-            btn.classList.add('show');
-            // Иначе прячем
+        if (scrollY > 798) {
+            btnUp.classList.add('show');
         } else {
-            btn.classList.remove('show');
+            btnUp.classList.remove('show');
         }
     });
 
-    // При клике прокручиываем на самый верх
-    btn.onclick = function (click) {
+    btnUp.onclick = function (click) {
         click.preventDefault();
         scrollTo(0, 200);
     }
-});
 
-document.addEventListener('DOMContentLoaded', function () {
-    let btn = document.querySelector('#to-down');
-    btn.onclick = function (click) {
+    btnDown.onclick = function (click) {
         click.preventDefault();
         scrollTo(790, 300);
     }
 });
+
