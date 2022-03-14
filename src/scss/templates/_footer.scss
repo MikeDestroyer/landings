@@ -10,7 +10,42 @@
     font-size: 18px;
     text-transform: uppercase;
   }
+  &-social {
+      &-block {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        padding-bottom: 20px;
+      }
+      &__link {
+        background-color: white;
+        width: 38px;
+        max-width: 38px;
+        height: 38px;
+        border-radius: 19px;
+        text-align: center;
+        margin: 0 10px;
+        &:first-child{
+          margin-left: 0;
+        }
+        & > svg {
+          width: 18px;
+          height: auto;
+          vertical-align: -webkit-baseline-middle;
+
+        }
+      }
+      &__logo {
+      }
+  }
   &-block {
+    &__social {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    &__logo {
+    }
   }
   &-info {
     &-block {
@@ -38,4 +73,18 @@
       padding-top: 20px;
     }
 
+}
+
+.svg__telegram {
+  fill: #0088cc;
+}
+.svg__instagram {
+  fill: #e32d46;
+}
+.svg__linkedin {
+  fill: #0077b4;
+}
+.svg__vk {
+  width: 26px !important;
+  fill: #507299;
 }

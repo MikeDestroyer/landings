@@ -1,5 +1,8 @@
 @import "utils/vars";
 @import "utils/font";
+@import "utils/slickFix";
+@import "~slick-carousel/slick/slick";
+@import "~slick-carousel/slick/slick-theme";
 @import "utils/normalize";
 
 @import "templates/interface";

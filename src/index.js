@@ -1,5 +1,6 @@
-import * as bootstrap from 'bootstrap';
 import * as jquery from 'jquery';
+import * as bootstrap from 'bootstrap';
+import * as slickCarousel from 'slick-carousel'
 
 import './scss/main.scss';
 import './modules/ymap';

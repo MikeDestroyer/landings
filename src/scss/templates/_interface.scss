@@ -16,6 +16,7 @@ body {
     color: $white !important;
     font-size: 18px !important;
     &:hover, :focus {
+      box-shadow: none !important;
       background-color: $primary-darken !important;
       border-color: $primary-darken !important;
     }
@@ -24,6 +25,7 @@ body {
     &-primary {
       border: 2px solid $primary !important;
       &:hover, :focus {
+        box-shadow: none !important;
         background-color: transparent !important;
         color: $white !important;
         border-color: $white !important;
@@ -32,6 +34,21 @@ body {
         box-shadow: $white !important;
       }
     }
+  }
+  &:focus {
+    box-shadow: none !important;
+  }
+}
+.accordion-button {
+  border: none !important;
+  &:focus {
+    box-shadow: none !important;
+    border-color: $white !important;
+  }
+  &:not(.collapsed) {
+    color: initial !important;
+    background-color: initial !important;
+    box-shadow: none;
   }
 }
 .bold {
