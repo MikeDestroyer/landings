@@ -309,7 +309,24 @@
     <div class="container">
         <div class="company-block">
             <h1 class="company__title">ЖИЗНЬ КОМПАНИИ</h1>
-            <div class="company__slider"></div>
+            <div class="company__slider">
+
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="<%=require("./assets/images/slide1.jpg")%>" alt=""></div>
+                        <div class="swiper-slide"><img src="<%=require("./assets/images/slide2.jpg")%>" alt=""></div>
+                        <div class="swiper-slide"><img src="<%=require("./assets/images/slide3.jpg")%>" alt=""></div>
+                        <div class="swiper-slide"><img src="<%=require("./assets/images/slide4.jpg")%>" alt=""></div>
+                        <div class="swiper-slide"><img src="<%=require("./assets/images/slide5.jpg")%>" alt=""></div>
+                        <div class="swiper-slide"><img src="<%=require("./assets/images/slide6.jpg")%>" alt=""></div>
+                        <div class="swiper-slide"><img src="<%=require("./assets/images/slide7.jpg")%>" alt=""></div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+            </div>
 
         </div>
     </div>
@@ -377,7 +394,8 @@
                     </a>
                 </div>
             </div>
-            <div id="map" class="footer__map">
+            <div>
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aabe9df2e576ff418ee3d3a146cef9fea87326ba284ed2ec7f868c014fd461217&amp;width=100%25&amp;height=240&amp;lang=ru_RU&amp;scroll=true"></script>
             </div>
         </div>
     </div>

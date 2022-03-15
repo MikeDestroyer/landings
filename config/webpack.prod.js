@@ -11,13 +11,14 @@ module.exports = {
     },
     output: {
         path: path.resolve(__dirname, '../dist'),
+        // path: 'C:\\inetpub\\creacept',
         filename: 'js/[name].js',
         // publicPath: "/",
     },
     module: {
         rules: [
             {
-                test: /\.s[ac]ss$/i,
+                test: /\.(sass|scss|css)$/i,
                 use: [
                     MiniCssExtractPlugin.loader,
                     {

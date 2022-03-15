@@ -1,34 +1,13 @@
-import * as jquery from 'jquery';
 import * as bootstrap from 'bootstrap';
-import * as slickCarousel from 'slick-carousel'
+import {Swiper, Pagination, Scrollbar, Keyboard, Navigation, Autoplay} from 'swiper';
 
+
+import 'swiper/css/bundle';
 import './scss/main.scss';
-import './modules/ymap';
 
 
-const $ = require( "jquery" );
 
-ymaps.ready(init);
-function init(){
-    let pos = [53.911747, 27.540074];
-    let myMap = new ymaps.Map("map", {
-        center: pos,
-        zoom: 10,
-        controls: ['fullscreenControl']
-    });
-    let myGeoObject = new ymaps.GeoObject({
-        geometry: {
-            type: "Point", // тип геометрии - точка
-            coordinates: pos // координаты точки
-        }
-    }, {
-        preset: "islands#redIcon",
-        cursor: "pointer",
-    });
 
-    // Размещение геообъекта на карте.
-    myMap.geoObjects.add(myGeoObject);
-}
 
 
 
@@ -67,7 +46,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const btnUp = document.querySelector('#to-top');
     const btnDown = document.querySelector('#to-down');
 
-0
     window.addEventListener('scroll', function () {
         if (scrollY > 798) {
             btnUp.classList.add('show');
@@ -87,3 +65,33 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
+
+
+Swiper.use([Pagination, Keyboard, Navigation, Autoplay]);
+const swiper = new Swiper(".mySwiper", {
+    // slidesPerView: "auto",
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    breakpoints: {
+        768:{
+        slidesPerView: 2,
+        spaceBetween: 30
+        }
+    },
+    keyboard: {
+        enabled: true,
+    },
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    }
+});

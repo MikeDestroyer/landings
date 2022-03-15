@@ -1,9 +1,7 @@
 @import "utils/vars";
 @import "utils/font";
-@import "utils/slickFix";
-@import "~slick-carousel/slick/slick";
-@import "~slick-carousel/slick/slick-theme";
-@import "utils/normalize";
+@import "utils/swiper";
+
 
 @import "templates/interface";
 @import "templates/header";
@@ -18,6 +16,9 @@
 @import "templates/ymap";
 @import "templates/to-top";
 @import "~bootstrap/scss/bootstrap";
+
+
+
 
 
 @-webkit-keyframes hvr-buzz-out {
