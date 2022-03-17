@@ -3,14 +3,17 @@
   background-position: center;
   height: 650px;
   color: $white;
+  & > .container {
+    position: relative !important;
+    top: -100%;
+    z-index: 2;
+  };
   &-block {
     height: 100%;
-    //max-width: 100% !important;
     justify-content: center !important;
     &_conent{
       display: flex !important;
       flex-direction: column !important;
-      //max-width: 100% !important;
       height: auto;
     }
     &_title {

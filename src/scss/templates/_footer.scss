@@ -5,6 +5,7 @@
   padding-bottom: 50px;
   &__title {
     display: inline-block;
+    width: 100%;
     padding-bottom: 10px;
     font-weight: 700;
     font-size: 18px;
@@ -29,16 +30,16 @@
           margin-left: 0;
         }
         & > svg {
+          position: relative;
           width: 18px;
-          height: auto;
-          vertical-align: -webkit-baseline-middle;
-
         }
       }
       &__logo {
       }
   }
   &-block {
+
+
     &__social {
       display: flex;
       flex-direction: column;
@@ -50,7 +51,7 @@
   &-info {
     &-block {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       padding-bottom: 10px;
       align-items: center;
     }
@@ -68,23 +69,68 @@
   }
     &__map {
       //background-color: #00b5a7;
-      height: 220px;
       width: auto;
       padding-top: 20px;
     }
 
 }
+.svg {
+  &:hover {
+    fill: $white;
+  }
+  &__telegram {
+    top: 5px;
+    left: -1px;
+    fill: #0088cc;
+    &-bubble {
+      &:hover {
+        background: #0088cc;
+      }
+    }
+  }
+  &__instagram {
+    top: 5px;
+    fill: #e32d46;
+    &-bubble {
+      &:hover {
+        background: #e32d46;
+      }
+    }
+  }
+  &__linkedin {
+    top: 5px;
+    fill: #0077b4;
+    &-bubble {
+      &:hover {
+        background: #0077b4;
+      }
+    }
+  }
+  &__vk {
+    border: 1px solid black;
+    top: 6px;
+    width: 26px !important;
+    fill: #507299;
+    &-bubble {
+      &:hover {
+        background: #507299;
+      }
+    }
+  }
 
-.svg__telegram {
-  fill: #0088cc;
 }
-.svg__instagram {
-  fill: #e32d46;
+
+
+@media (max-width: 991.98px) {
+  .footer {
+    &__title {
+
+    }
+    &-info {
+      &-block {
+        flex-wrap: wrap;
+      }
+    }
+  }
 }
-.svg__linkedin {
-  fill: #0077b4;
-}
-.svg__vk {
-  width: 26px !important;
-  fill: #507299;
-}
+

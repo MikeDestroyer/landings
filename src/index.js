@@ -1,14 +1,9 @@
 import * as bootstrap from 'bootstrap';
-import {Swiper, Pagination, Scrollbar, Keyboard, Navigation, Autoplay} from 'swiper';
+import Swiper from './modules/swiper';
 
 
 import 'swiper/css/bundle';
 import './scss/main.scss';
-
-
-
-
-
 
 
 // функция скроллинга
@@ -65,33 +60,12 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
+// document.getElementById('video').play();
 
 
-Swiper.use([Pagination, Keyboard, Navigation, Autoplay]);
-const swiper = new Swiper(".mySwiper", {
-    // slidesPerView: "auto",
-    slidesPerView: 1,
-    spaceBetween: 30,
-    loop: true,
-    breakpoints: {
-        768:{
-        slidesPerView: 2,
-        spaceBetween: 30
-        }
-    },
-    keyboard: {
-        enabled: true,
-    },
-    autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-    },
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+let video = document.getElementById('video')
+    if (window.screen.width > 576) {
+        document.getElementById('video').play();
+    } else {
+        video.remove()
     }
-});

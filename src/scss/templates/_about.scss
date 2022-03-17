@@ -124,3 +124,16 @@
     }
   }
 }
+
+@media (max-width: 991.98px) {
+  .about {
+    &-people {
+      &-content {
+        &-block {
+          justify-content: center;
+        }
+        }
+      }
+  }
+}
+
