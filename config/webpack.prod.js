@@ -1,5 +1,7 @@
 const path = require('path')
 const MiniCssExtractPlugin = require("mini-css-extract-plugin")
+const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
+const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const {CleanWebpackPlugin} = require("clean-webpack-plugin")
 
@@ -13,6 +15,7 @@ module.exports = {
         path: path.resolve(__dirname, '../dist'),
         // path: 'C:\\inetpub\\creacept',
         filename: 'js/[name].js',
+        clean: true,
         // publicPath: "/",
     },
     module: {
@@ -38,8 +41,8 @@ module.exports = {
                 ],
             },
             {
-                test: /\.(png|svg|jpe?g|gif|mp4)$/,
-                type: 'asset/resource',
+                test: /\.(jpe?g|png|gif|svg|mp4)$/i,
+                type: "asset",
                 generator: {
                     filename: 'media/[hash][ext][query]'
                 }
@@ -53,15 +56,42 @@ module.exports = {
             },
         ],
     },
+    optimization: {
+        minimizer: [
+            // For webpack@5 you can use the `...` syntax to extend existing minimizers (i.e. `terser-webpack-plugin`), uncomment the next line
+            `...`,
+            new CssMinimizerPlugin(),
+            new ImageMinimizerPlugin({
+                minimizer: {
+                    implementation: ImageMinimizerPlugin.imageminMinify,
+                    options: {
+                        // Lossless optimization with custom option
+                        // Feel free to experiment with options for better result for you
+                        plugins: [
+                            ["gifsicle", { interlaced: true }],
+                            ["jpegtran", { progressive: true }],
+                            ["optipng", { optimizationLevel: 5 }],
+                        ],
+                    },
+                },
+            }),
+        ],
+    },
     plugins: [
         new HtmlWebpackPlugin({
                 template: path.resolve(__dirname, '../src/index.html'),
                 title: "CREACEPT",
                 filename: 'index.html',
-                favicon: './src/static/favicon.png',
+                favicon: './src/static/favicon.ico',
+            }),
+        new HtmlWebpackPlugin({
+                template: path.resolve(__dirname, '../src/thankyou.html'),
+                title: "Страница благодарности — CREACEPT",
+                filename: 'thankyou.html',
+                favicon: './src/static/favicon.ico',
             }),
         new CleanWebpackPlugin({
-            cleanStaleWebpackAssets: false,
+            cleanStaleWebpackAssets: true,
         }),
         new MiniCssExtractPlugin({
             filename: "style/[name].css",

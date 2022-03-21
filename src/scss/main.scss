@@ -4,12 +4,14 @@
 
 
 @import "templates/interface";
+@import "templates/navbar";
 @import "templates/header";
 @import "templates/hero";
 @import "templates/video";
 @import "templates/about";
 @import "templates/benefits";
 @import "templates/vacancies";
+@import "templates/accordion";
 @import "templates/contacts";
 @import "templates/form";
 @import "templates/company";
@@ -17,6 +19,10 @@
 @import "templates/ymap";
 @import "templates/to-top";
 @import "templates/animation";
+
+
+@import "templates/form-success";
+
 @import "~bootstrap/scss/bootstrap";
 
 

@@ -19,16 +19,9 @@
 
     &-block {
 
-      &__tel {
         margin-bottom: 20px;
         align-items: center;
 
-      }
-
-      &__email {
-        align-items: center;
-
-      }
     }
 
     &__title {
@@ -55,3 +48,19 @@
   }
 }
 
+@media (max-width: 991.98px) {
+  .contacts {
+    padding-bottom: 0;
+    &-us {
+      &-block {
+        flex-direction: column;
+        &:last-child {
+          margin-bottom: 36px;
+        }
+      }
+      &__hooks {
+        text-align: center;
+      }
+    }
+  }
+}

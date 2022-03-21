@@ -1,0 +1,21 @@
+.accordion {
+  &-body {
+
+  }
+  &__link {
+    display: block;
+    padding-bottom: 16px;
+    font-size: 18px;
+    text-decoration: none;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out !important;
+    &:last-child {
+      padding-bottom: 0;
+    }
+    &:hover, :focus {
+      cursor: pointer !important;
+      background-color: transparent !important;
+      color: $primary-darken !important;
+      border-color: $primary-darken !important;
+    }
+  }
+}

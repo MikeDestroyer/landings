@@ -12,3 +12,11 @@
     height: 468px;
   }
 }
+
+@media (max-width: 991.98px) {
+  .company {
+    &__title {
+      font-size: 38px;
+    }
+  }
+}

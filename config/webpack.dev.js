@@ -52,8 +52,13 @@ module.exports = {
             title: "CREACEPT",
             filename: 'index.html',
         favicon: './src/static/favicon.png',
-        },
-
+        }),
+        new HtmlWebpackPlugin({
+            template: path.resolve(__dirname, '../src/thankyou.html'),
+            title: "Страница благодарности — CREACEPT",
+            filename: 'thankyou.html',
+            favicon: './src/static/favicon.png',
+        }
     )],
 
 }

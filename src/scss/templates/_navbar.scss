@@ -1,0 +1,16 @@
+.navbar {
+  &-toggler {
+    color: $primary !important;
+    border: none !important;
+    &-icon {
+      //color: $primary !important;
+      //position: relative !important;
+      background-image: none !important;
+      & > svg {
+        //position: absolute !important;
+        fill: $primary;
+
+      }
+    }
+  }
+}

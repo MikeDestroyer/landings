@@ -39,7 +39,7 @@
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="30" width="30"> <!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) --><path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"/></svg></span>
                 </button>
                 <div class="header-navbar_routes collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
@@ -61,8 +61,8 @@
                     </ul>
                 </div>
                 <div class="header-contacts">
-                    <a class="header-contacts_tel link-primary">+375 44 772 91 63</a>
-                    <button class="header-contacts_callback btn btn-outline-primary">Перезвоните мне</button>
+                    <a class="header-contacts_tel link-primary" href="tel:80447729163">+375 44 772 91 63</a>
+                    <a class="header-contacts_callback btn btn-outline-primary" href="#contacts">Перезвоните мне</a>
                 </div>
             </div>
         </nav>
@@ -78,11 +78,11 @@
                 <h1 class="hero-block_title">Ищешь профессию будущего?</h1>
                 <p class="hero-block_subtitle">Ждем тебя в EdTech</p>
                 <div class="hero-block_buttons">
-                    <button class="hero-block_btn-modal btn btn-primary">Хочу здесь работать</button>
-                    <button class="hero-block_btn-link btn btn-outline-primary">Посмотореть вакансии</button>
+                    <a class="hero-block_btn-modal btn btn-primary" href="#contacts">Хочу здесь работать</a>
+                    <a class="hero-block_btn-link btn btn-outline-primary" href="#vacancies">Посмотореть вакансии</a>
                 </div>
                 <a id="to-down" class="hero-block__scroll-down">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M169.4 278.6C175.6 284.9 183.8 288 192 288s16.38-3.125 22.62-9.375l160-160c12.5-12.5 12.5-32.75 0-45.25s-32.75-12.5-45.25 0L192 210.8L54.63 73.38c-12.5-12.5-32.75-12.5-45.25 0s-12.5 32.75 0 45.25L169.4 278.6zM329.4 265.4L192 402.8L54.63 265.4c-12.5-12.5-32.75-12.5-45.25 0s-12.5 32.75 0 45.25l160 160C175.6 476.9 183.8 480 192 480s16.38-3.125 22.62-9.375l160-160c12.5-12.5 12.5-32.75 0-45.25S341.9 252.9 329.4 265.4z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" height="40" width="30"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M169.4 278.6C175.6 284.9 183.8 288 192 288s16.38-3.125 22.62-9.375l160-160c12.5-12.5 12.5-32.75 0-45.25s-32.75-12.5-45.25 0L192 210.8L54.63 73.38c-12.5-12.5-32.75-12.5-45.25 0s-12.5 32.75 0 45.25L169.4 278.6zM329.4 265.4L192 402.8L54.63 265.4c-12.5-12.5-32.75-12.5-45.25 0s-12.5 32.75 0 45.25l160 160C175.6 476.9 183.8 480 192 480s16.38-3.125 22.62-9.375l160-160c12.5-12.5 12.5-32.75 0-45.25S341.9 252.9 329.4 265.4z"/></svg>
                 </a>
             </div>
         </div>
@@ -158,7 +158,7 @@
                     Если вам интересны сфера финансовых, фондовых, криптовалютных и иных рынков, если вы готовы
                     вкладывать силы и энергию в получение новых знаний и навыков &nbsp;— добро пожаловать к нам!
                 </p>
-                <button class="about-people-content_btn-modal btn btn-primary col-10 col-md-6 col-lg-5">Хочу в команду</button>
+                <button class="about-people-content_btn-modal btn btn-primary col-11 col-md-8 col-lg-8">Хочу в команду</button>
                 </div>
             </div>
         </div>
@@ -171,7 +171,7 @@
             <div class="col-12 col-lg-6 mb-4">
                 <div class="benefits-list__card card">
                     <div class="benefits-list__card-img-block">
-                        <img class="benefits-list__card-img" src="<%=require("./assets/images/knowledge.png")%>">
+                        <img class="benefits-list__card-img" height="58" width="58" src="<%=require("./assets/images/knowledge.png")%>">
                     </div>
                     <p class="benefits-list__card-text">Корпоративная библиотека и <span class="bold">обширная база знаний</span> в компании</p>
                 </div>
@@ -179,7 +179,7 @@
             <div class="col-12 col-lg-6 mb-4">
                 <div class="benefits-list__card card">
                     <div class="benefits-list__card-img-block">
-                        <img class="benefits-list__card-img" src="<%=require("./assets/images/education.png")%>">
+                        <img class="benefits-list__card-img" height="58" width="58" src="<%=require("./assets/images/education.png")%>">
                     </div>
                     <p class="benefits-list__card-text"><span class="bold">Уникальная система </span>внутреннего обучения и ввода в должность</p>
                 </div>
@@ -187,7 +187,7 @@
             <div class="col-12 col-lg-6 mb-4">
             <div class="benefits-list__card card">
                 <div class="benefits-list__card-img-block">
-                    <img class="benefits-list__card-img" src="<%=require("./assets/images/increase.png")%>">
+                    <img class="benefits-list__card-img" height="58" width="58" src="<%=require("./assets/images/increase.png")%>">
                 </div>
                 <p class="benefits-list__card-text">Комфортные условия труда, интересные задачи,
                     <span class="bold">конкурентный уровень дохода</span></p>
@@ -196,7 +196,7 @@
             <div class="col-12 col-lg-6 mb-4">
             <div class="benefits-list__card card">
                 <div class="benefits-list__card-img-block">
-                    <img class="benefits-list__card-img" src="<%=require("./assets/images/career.png")%>">
+                    <img class="benefits-list__card-img" height="58" width="58" src="<%=require("./assets/images/career.png")%>">
                 </div>
                 <p class="benefits-list__card-text">Возможность карьерного и <span class="bold">профессионального роста </span>сотрудников</p>
             </div>
@@ -205,7 +205,7 @@
 
             <div class="benefits-list__card card">
                 <div class="benefits-list__card-img-block">
-                    <img class="benefits-list__card-img" src="<%=require("./assets/images/location.png")%>">
+                    <img class="benefits-list__card-img" height="58" width="58" src="<%=require("./assets/images/location.png")%>">
                 </div>
                 <p class="benefits-list__card-text">Современный <span class="bold">офис в центре города</span></p>
             </div>
@@ -214,7 +214,7 @@
 
             <div class="benefits-list__card card">
                 <div class="benefits-list__card-img-block">
-                    <img class="benefits-list__card-img" src="<%=require("./assets/images/group.png")%>">
+                    <img class="benefits-list__card-img" height="58" width="58" src="<%=require("./assets/images/group.png")%>">
                 </div>
                 <p class="benefits-list__card-text">Дружный коллектив молодых и <span class="bold">амбициозных ребят</span></p>
             </div>
@@ -240,7 +240,7 @@
                     </h2>
                     <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#vacancy-1">
                         <div class="accordion-body">
-                            <a class="link-primary" href="#">Специалист по работе с клиентами</a>
+                            <a class="accordion__link link-primary" href="https://rabota.by/vacancy/51261661?hhtmFrom=employer_vacancies">Специалист по работе с клиентами</a>
                         </div>
                     </div>
                 </div>
@@ -254,8 +254,8 @@
                     </h2>
                     <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#vacancy-2">
                         <div class="accordion-body">
-                            <a class="link-primary" href="#">SEO-специалист</a>
-                            <a class="link-primary" href="#">Руководитель контент-направления</a>
+                            <a class="accordion__link link-primary" href="https://rabota.by/vacancy/49888621?hhtmFrom=employer_vacancies">SEO-специалист</a>
+                            <a class="accordion__link link-primary" href="https://rabota.by/vacancy/49726351?hhtmFrom=employer_vacancies">Руководитель контент-направления</a>
 
                         </div>
                     </div>
@@ -270,7 +270,7 @@
                     </h2>
                     <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#vacancy-3">
                         <div class="accordion-body">
-                            <a class="link-primary" href="#">Трейдер-аналитик</a>
+                            <a class="accordion__link link-primary" href="https://rabota.by/vacancy/49991091?hhtmFrom=employer_vacancies">Трейдер-аналитик</a>
                         </div>
                     </div>
                 </div>
@@ -289,43 +289,49 @@
                 <span class="contacts-us__span txt-gray">КОНТАКТЫ ДЛЯ СВЯЗИ</span>
                 <div class="contacts-us__line"></div>
                 <h2 class="contacts-us__title txt-gray">Вы можете связаться с отделом персонала и уточнить все интересующие вас вопросы</h2>
-                <div class="contacts-us-block__tel d-flex">
+                <div class="contacts-us-block d-flex">
                     <div class="contacts-us-svg">
-                    <svg class="svgicon css79 contacts-us__svg-tel txt-gray" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" style="border-radius: 50%;"><rect x="0" y="0" width="30" height="30" style="fill: none" rx="15" ry="15"></rect><g transform="scale(0.7) translate(6.428571428571429, 6.428571428571429)" transform-origin="0 0"> <g id="XMLID_94_"><path id="XMLID_272_" d="M25.2,19c-1.5,0-3-0.2-4.4-0.7c-0.6-0.2-1.4,0-1.8,0.4l-2.8,2.1c-3.3-1.7-5.3-3.8-7-7l2.1-2.8 c0.5-0.5,0.6-1.2,0.4-1.8C11.3,7.8,11,6.3,11,4.8c0-1-0.8-1.8-1.8-1.8H4.8C3.8,3,3,3.8,3,4.8C3,17,13,27,25.2,27 c1,0,1.8-0.8,1.8-1.8v-4.5C27,19.8,26.2,19,25.2,19z"></path></g></g></svg>
+                    <svg class="svgicon css79 contacts-us__svg-tel txt-gray" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" height="65" width="65" style="border-radius: 50%;"><rect x="0" y="0" width="30" height="30" style="fill: none" rx="15" ry="15"></rect><g transform="scale(0.7) translate(6.428571428571429, 6.428571428571429)" transform-origin="0 0"> <g id="XMLID_94_"><path id="XMLID_272_" d="M25.2,19c-1.5,0-3-0.2-4.4-0.7c-0.6-0.2-1.4,0-1.8,0.4l-2.8,2.1c-3.3-1.7-5.3-3.8-7-7l2.1-2.8 c0.5-0.5,0.6-1.2,0.4-1.8C11.3,7.8,11,6.3,11,4.8c0-1-0.8-1.8-1.8-1.8H4.8C3.8,3,3,3.8,3,4.8C3,17,13,27,25.2,27 c1,0,1.8-0.8,1.8-1.8v-4.5C27,19.8,26.2,19,25.2,19z"></path></g></g></svg>
                     </div>
 
                     <div class="contacts-us-tel d-flex flex-column">
-                        <a class="contacts-us__link link-primary">+375 (25) 904-85-28 </a>
-                        <a class="contacts-us__link link-primary">+375 (44) 772-91-63 </a>
-                        <span class="contacts-us__hooks txt-gray">(Viber, Telegram, WhatsApp)</span>
+                        <a class="contacts-us__link link-primary" href="tel:80259048528">+375 (25) 904-85-28 </a>
+                        <a class="contacts-us__link link-primary" href="tel:80447729163">+375 (44) 772-91-63 </a>
+                        <span class="contacts-us__hooks  txt-gray">(Viber, Telegram, WhatsApp)</span>
                     </div>
                 </div>
-                <div class="contacts-us-block__email d-flex">
+                <div class="contacts-us-block d-flex">
                         <div class="contacts-us-svg">
-                           <svg class="svgicon css79 contacts-us__svg-tel txt-gray" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" style="border-radius: 50%;"><rect x="0" y="0" width="30" height="30" style="fill: none" rx="15" ry="15"></rect><g transform="scale(0.7) translate(6.428571428571429, 6.428571428571429)" transform-origin="0 0"> <path d="M27.5,5h-25C1.1,5,0,6.1,0,7.5v15C0,23.9,1.1,25,2.5,25h25c1.4,0,2.5-1.1,2.5-2.5v-15C30,6.1,28.9,5,27.5,5z M10.8,15.9 l-7,6C3.7,22,3.6,22,3.5,22c-0.1,0-0.3-0.1-0.4-0.2c-0.2-0.2-0.2-0.5,0.1-0.7l7-6c0.2-0.2,0.5-0.2,0.7,0.1 C11.1,15.4,11,15.7,10.8,15.9z M14.7,16c-0.7,0-1.5-0.2-2-0.6L3.2,8.9C3,8.8,2.9,8.4,3.1,8.2C3.2,8,3.5,7.9,3.8,8.1l9.5,6.5 c0.8,0.6,2.1,0.6,2.9,0l10-6.5c0.2-0.2,0.5-0.1,0.7,0.1s0.1,0.5-0.1,0.7l-10,6.5C16.2,15.8,15.5,16,14.7,16z M26.9,21.8 c-0.1,0.1-0.2,0.2-0.4,0.2c-0.1,0-0.2,0-0.3-0.1l-7-6c-0.2-0.2-0.2-0.5-0.1-0.7s0.5-0.2,0.7-0.1l7,6C27,21.3,27.1,21.6,26.9,21.8z"></path></g></svg>
+                           <svg class="svgicon css79 contacts-us__svg-tel txt-gray" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" height="65" width="65" style="border-radius: 50%;"><rect x="0" y="0" width="30" height="30" style="fill: none" rx="15" ry="15"></rect><g transform="scale(0.7) translate(6.428571428571429, 6.428571428571429)" transform-origin="0 0"> <path d="M27.5,5h-25C1.1,5,0,6.1,0,7.5v15C0,23.9,1.1,25,2.5,25h25c1.4,0,2.5-1.1,2.5-2.5v-15C30,6.1,28.9,5,27.5,5z M10.8,15.9 l-7,6C3.7,22,3.6,22,3.5,22c-0.1,0-0.3-0.1-0.4-0.2c-0.2-0.2-0.2-0.5,0.1-0.7l7-6c0.2-0.2,0.5-0.2,0.7,0.1 C11.1,15.4,11,15.7,10.8,15.9z M14.7,16c-0.7,0-1.5-0.2-2-0.6L3.2,8.9C3,8.8,2.9,8.4,3.1,8.2C3.2,8,3.5,7.9,3.8,8.1l9.5,6.5 c0.8,0.6,2.1,0.6,2.9,0l10-6.5c0.2-0.2,0.5-0.1,0.7,0.1s0.1,0.5-0.1,0.7l-10,6.5C16.2,15.8,15.5,16,14.7,16z M26.9,21.8 c-0.1,0.1-0.2,0.2-0.4,0.2c-0.1,0-0.2,0-0.3-0.1l-7-6c-0.2-0.2-0.2-0.5-0.1-0.7s0.5-0.2,0.7-0.1l7,6C27,21.3,27.1,21.6,26.9,21.8z"></path></g></svg>
                         </div>
-                        <a class="contacts-us__link link-primary">hr@creacept.by</a>
+                        <a class="contacts-us__link link-primary" href="mailto:hr@creacept.by">hr@creacept.by</a>
 
                 </div>
             </div>
         </div>
         <div class="col-12 offset-lg-1 col-lg-5">
-            <div class="contacts-form__block shadow p-3 bg-white roundedshadow p-3 bg-white rounded">
-                <div class="form-text">
-                <h4 class="form-text__title">Оставьте заявку</h4>
-                <span class="form-text__subtitle txt-gray">И мы с Вами свяжемся</span>
-                </div>
-                <div class="contacts-form__padding">
-                    <form class="form" method="post" novalidate="novalidate">
-                        <input name="name" type="text" class="form__input" placeholder="Имя" required="">
-                        <input name="email" type="email" class="form__input" placeholder="Электронная почта" required="">
-                        <input name="link" type="string" class="form__input" placeholder="Ссылка на резюме" required="">
-                        <button type="submit" class="form__button btn btn-primary ">
-                            <strong>Получить курс</strong>
-                        </button>
-                    </form>
-                </div>
-            </div>
+<!--            <div class="contacts-form__block shadow p-3 bg-white roundedshadow p-3 bg-white rounded">-->
+<!--                <div class="form-text">-->
+<!--                <h4 class="form-text__title">Оставьте заявку</h4>-->
+<!--                <span class="form-text__subtitle txt-gray">И мы с Вами свяжемся</span>-->
+<!--                </div>-->
+<!--                <div class="contacts-form__padding">-->
+<!--                    <form id="form" class="form" method="" novalidate="novalidate">-->
+<!--                        <input name="name" type="text" class="form__input" placeholder="Имя" required="">-->
+<!--                        <input name="email" type="email" class="form__input" placeholder="Электронная почта" required="">-->
+<!--                        <input name="link" type="string" class="form__input" placeholder="Ссылка на резюме" required="">-->
+<!--                        <button type="submit" class="form__button btn btn-primary ">-->
+<!--                            <strong>Получить курс</strong>-->
+<!--                        </button>-->
+<!--                    </form>-->
+                    <script data-b24-form="inline/807/alv1jo" data-skip-moving="true">
+                        (function(w,d,u){
+                            var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/180000|0);
+                            var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
+                        })(window,document,'https://crm.tradings.world/upload/crm/form/loader_807_alv1jo.js');
+                    </script>
+<!--                </div>-->
+<!--            </div>-->
 
         </div>
     </div>
@@ -339,13 +345,13 @@
 
                 <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="<%=require("./assets/images/slide1.jpg")%>" alt=""></div>
-                        <div class="swiper-slide"><img src="<%=require("./assets/images/slide2.jpg")%>" alt=""></div>
-                        <div class="swiper-slide"><img src="<%=require("./assets/images/slide3.jpg")%>" alt=""></div>
-                        <div class="swiper-slide"><img src="<%=require("./assets/images/slide4.jpg")%>" alt=""></div>
-                        <div class="swiper-slide"><img src="<%=require("./assets/images/slide5.jpg")%>" alt=""></div>
-                        <div class="swiper-slide"><img src="<%=require("./assets/images/slide6.jpg")%>" alt=""></div>
-                        <div class="swiper-slide"><img src="<%=require("./assets/images/slide7.jpg")%>" alt=""></div>
+                        <div class="swiper-slide"><img src="<%=require("./assets/images/slide1.png")%>" alt=""></div>
+                        <div class="swiper-slide"><img src="<%=require("./assets/images/slide2.png")%>" alt=""></div>
+                        <div class="swiper-slide"><img src="<%=require("./assets/images/slide3.png")%>" alt=""></div>
+                        <div class="swiper-slide"><img src="<%=require("./assets/images/slide4.png")%>" alt=""></div>
+                        <div class="swiper-slide"><img src="<%=require("./assets/images/slide5.png")%>" alt=""></div>
+                        <div class="swiper-slide"><img src="<%=require("./assets/images/slide6.png")%>" alt=""></div>
+                        <div class="swiper-slide"><img src="<%=require("./assets/images/slide7.png")%>" alt=""></div>
                     </div>
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
@@ -362,59 +368,59 @@
         <div class="row">
             <div class="col-12 col-lg-4">
                 <div class="footer-block">
-                    <div class="footer-info-block">
                     <span class="footer__title">Наш адрес</span>
+                    <div class="footer-info-block">
                         <div class="footer-info-svg">
-                            <svg class="footer-info__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path class="st0" d="M63.998,13.879c-18.965,0-34.393,15.43-34.393,34.395c0,18.066,30.621,62.662,31.924,64.551 c0.561,0.812,1.482,1.297,2.469,1.297s1.91-0.484,2.471-1.297c1.303-1.889,31.926-46.484,31.926-64.551 C98.395,29.309,82.965,13.879,63.998,13.879z M63.998,27.27c11.381,0,20.639,9.259,20.639,20.639s-9.258,20.638-20.639,20.638 c-11.379,0-20.637-9.258-20.637-20.638S52.619,27.27,63.998,27.27z"></path></svg>
+                            <svg class="footer-info__svg" xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 128 128"><path class="st0" d="M63.998,13.879c-18.965,0-34.393,15.43-34.393,34.395c0,18.066,30.621,62.662,31.924,64.551 c0.561,0.812,1.482,1.297,2.469,1.297s1.91-0.484,2.471-1.297c1.303-1.889,31.926-46.484,31.926-64.551 C98.395,29.309,82.965,13.879,63.998,13.879z M63.998,27.27c11.381,0,20.639,9.259,20.639,20.639s-9.258,20.638-20.639,20.638 c-11.379,0-20.637-9.258-20.637-20.638S52.619,27.27,63.998,27.27z"></path></svg>
                         </div>
-                            <span class="footer-info__text">г. Минск, Центральный район, пр-т. Победителей, 27, офис 352</span>
+                        <span class="footer-info__text">г. Минск, Центральный район, пр-т. Победителей, 27, офис 352</span>
                     </div>
                 </div>
             </div>
             <div class="col-12 col-lg-4">
                 <div class="footer-block">
-                    <div class="footer-info-block">
                     <span class="footer__title">Наши контакты</span>
+                    <div class="footer-info-block">
                         <div class="footer-info-svg">
-                            <svg class="footer-info__svg svgicon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" ><path class="st0" d="M48.097,15.739c0.042-0.004,0.079-0.006,0.112-0.008c0.031,0.075,0.068,0.179,0.109,0.313 c0.017,0.057,0.036,0.112,0.057,0.168l8.195,22.154c0.035,0.092,0.058,0.192,0.069,0.281c-1.168,0.762-1.632,2.285-1.027,3.587 c0.482,1.04,1.513,1.651,2.587,1.651c0.402,0,0.81-0.085,1.198-0.266c2.961-1.374,3.493-4.719,2.503-7.272l-8.152-22.037 c-0.935-3-3.111-4.505-6.136-4.252c-1.568,0.134-2.731,1.515-2.598,3.082C45.149,14.709,46.518,15.865,48.097,15.739z"></path><path class="st0" d="M79.297,82.402c-0.534-0.539-1.26-0.843-2.019-0.845c-0.003,0-0.005,0-0.007,0 c-0.756,0-1.48,0.301-2.016,0.835c-0.507,0.506-0.895,0.949-1.257,1.363c-0.622,0.712-0.996,1.142-1.903,1.748 c-0.697,0.463-1.681,0.13-2.222-0.68l-22.249-33.52c-0.615-0.921-0.49-2.266,0.25-2.762c0.883-0.587,1.017-0.636,1.66-0.863 c0.447-0.159,1.057-0.375,2.029-0.788c1.419-0.602,2.103-2.221,1.544-3.657L41.862,14.338c-0.285-0.731-0.858-1.313-1.585-1.608 c-0.729-0.294-1.544-0.276-2.257,0.05c-3.831,1.753-7.168,4.017-10.226,6.945c-3.212,3.148-6.564,7.769-7.799,10.745 c-0.172,0.412-0.243,0.859-0.21,1.304c0.908,12.188,9.079,31.691,20.329,48.529c11.075,16.58,26.313,31.943,37.057,37.36 c0.398,0.2,0.838,0.305,1.283,0.305h0.003c4.213-0.004,9.75-2.174,11.962-3.118c4.092-1.797,8.318-4.367,10.518-6.397 c0.568-0.524,0.899-1.257,0.917-2.03s-0.28-1.52-0.824-2.069L79.297,82.402z"></path><path class="st0" d="M106.854,94.795c-0.063-0.078-0.132-0.152-0.204-0.223L89.336,77.573c-1.947-1.847-5.317-2.623-7.724-0.427 c-1.163,1.061-1.245,2.864-0.184,4.025c0.987,1.081,2.615,1.229,3.772,0.391c0.067,0.033,0.136,0.074,0.177,0.112l17.089,16.778 c0.078,0.19,0.109,0.616-0.062,0.926c-0.76,1.379-0.259,3.112,1.119,3.873c0.437,0.24,0.908,0.354,1.374,0.354 c1.005,0,1.979-0.532,2.498-1.474C108.674,99.816,108.447,96.73,106.854,94.795z"></path>
+                            <svg class="footer-info__svg svgicon" xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 128 128" ><path class="st0" d="M48.097,15.739c0.042-0.004,0.079-0.006,0.112-0.008c0.031,0.075,0.068,0.179,0.109,0.313 c0.017,0.057,0.036,0.112,0.057,0.168l8.195,22.154c0.035,0.092,0.058,0.192,0.069,0.281c-1.168,0.762-1.632,2.285-1.027,3.587 c0.482,1.04,1.513,1.651,2.587,1.651c0.402,0,0.81-0.085,1.198-0.266c2.961-1.374,3.493-4.719,2.503-7.272l-8.152-22.037 c-0.935-3-3.111-4.505-6.136-4.252c-1.568,0.134-2.731,1.515-2.598,3.082C45.149,14.709,46.518,15.865,48.097,15.739z"></path><path class="st0" d="M79.297,82.402c-0.534-0.539-1.26-0.843-2.019-0.845c-0.003,0-0.005,0-0.007,0 c-0.756,0-1.48,0.301-2.016,0.835c-0.507,0.506-0.895,0.949-1.257,1.363c-0.622,0.712-0.996,1.142-1.903,1.748 c-0.697,0.463-1.681,0.13-2.222-0.68l-22.249-33.52c-0.615-0.921-0.49-2.266,0.25-2.762c0.883-0.587,1.017-0.636,1.66-0.863 c0.447-0.159,1.057-0.375,2.029-0.788c1.419-0.602,2.103-2.221,1.544-3.657L41.862,14.338c-0.285-0.731-0.858-1.313-1.585-1.608 c-0.729-0.294-1.544-0.276-2.257,0.05c-3.831,1.753-7.168,4.017-10.226,6.945c-3.212,3.148-6.564,7.769-7.799,10.745 c-0.172,0.412-0.243,0.859-0.21,1.304c0.908,12.188,9.079,31.691,20.329,48.529c11.075,16.58,26.313,31.943,37.057,37.36 c0.398,0.2,0.838,0.305,1.283,0.305h0.003c4.213-0.004,9.75-2.174,11.962-3.118c4.092-1.797,8.318-4.367,10.518-6.397 c0.568-0.524,0.899-1.257,0.917-2.03s-0.28-1.52-0.824-2.069L79.297,82.402z"></path><path class="st0" d="M106.854,94.795c-0.063-0.078-0.132-0.152-0.204-0.223L89.336,77.573c-1.947-1.847-5.317-2.623-7.724-0.427 c-1.163,1.061-1.245,2.864-0.184,4.025c0.987,1.081,2.615,1.229,3.772,0.391c0.067,0.033,0.136,0.074,0.177,0.112l17.089,16.778 c0.078,0.19,0.109,0.616-0.062,0.926c-0.76,1.379-0.259,3.112,1.119,3.873c0.437,0.24,0.908,0.354,1.374,0.354 c1.005,0,1.979-0.532,2.498-1.474C108.674,99.816,108.447,96.73,106.854,94.795z"></path>
                             </svg>
                         </div>
-                            <span class="footer-info__text">+375 (25) 904-85-28</span>
+                        <span class="footer-info__text">+375 (25) 904-85-28</span>
                     </div>
                     <div class="footer-info-block">
                         <div class="footer-info-svg">
-                            <svg class="footer-info__svg svgicon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" ><path class="st0" d="M48.097,15.739c0.042-0.004,0.079-0.006,0.112-0.008c0.031,0.075,0.068,0.179,0.109,0.313 c0.017,0.057,0.036,0.112,0.057,0.168l8.195,22.154c0.035,0.092,0.058,0.192,0.069,0.281c-1.168,0.762-1.632,2.285-1.027,3.587 c0.482,1.04,1.513,1.651,2.587,1.651c0.402,0,0.81-0.085,1.198-0.266c2.961-1.374,3.493-4.719,2.503-7.272l-8.152-22.037 c-0.935-3-3.111-4.505-6.136-4.252c-1.568,0.134-2.731,1.515-2.598,3.082C45.149,14.709,46.518,15.865,48.097,15.739z"></path><path class="st0" d="M79.297,82.402c-0.534-0.539-1.26-0.843-2.019-0.845c-0.003,0-0.005,0-0.007,0 c-0.756,0-1.48,0.301-2.016,0.835c-0.507,0.506-0.895,0.949-1.257,1.363c-0.622,0.712-0.996,1.142-1.903,1.748 c-0.697,0.463-1.681,0.13-2.222-0.68l-22.249-33.52c-0.615-0.921-0.49-2.266,0.25-2.762c0.883-0.587,1.017-0.636,1.66-0.863 c0.447-0.159,1.057-0.375,2.029-0.788c1.419-0.602,2.103-2.221,1.544-3.657L41.862,14.338c-0.285-0.731-0.858-1.313-1.585-1.608 c-0.729-0.294-1.544-0.276-2.257,0.05c-3.831,1.753-7.168,4.017-10.226,6.945c-3.212,3.148-6.564,7.769-7.799,10.745 c-0.172,0.412-0.243,0.859-0.21,1.304c0.908,12.188,9.079,31.691,20.329,48.529c11.075,16.58,26.313,31.943,37.057,37.36 c0.398,0.2,0.838,0.305,1.283,0.305h0.003c4.213-0.004,9.75-2.174,11.962-3.118c4.092-1.797,8.318-4.367,10.518-6.397 c0.568-0.524,0.899-1.257,0.917-2.03s-0.28-1.52-0.824-2.069L79.297,82.402z"></path><path class="st0" d="M106.854,94.795c-0.063-0.078-0.132-0.152-0.204-0.223L89.336,77.573c-1.947-1.847-5.317-2.623-7.724-0.427 c-1.163,1.061-1.245,2.864-0.184,4.025c0.987,1.081,2.615,1.229,3.772,0.391c0.067,0.033,0.136,0.074,0.177,0.112l17.089,16.778 c0.078,0.19,0.109,0.616-0.062,0.926c-0.76,1.379-0.259,3.112,1.119,3.873c0.437,0.24,0.908,0.354,1.374,0.354 c1.005,0,1.979-0.532,2.498-1.474C108.674,99.816,108.447,96.73,106.854,94.795z"></path>
+                            <svg class="footer-info__svg svgicon" xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 128 128" ><path class="st0" d="M48.097,15.739c0.042-0.004,0.079-0.006,0.112-0.008c0.031,0.075,0.068,0.179,0.109,0.313 c0.017,0.057,0.036,0.112,0.057,0.168l8.195,22.154c0.035,0.092,0.058,0.192,0.069,0.281c-1.168,0.762-1.632,2.285-1.027,3.587 c0.482,1.04,1.513,1.651,2.587,1.651c0.402,0,0.81-0.085,1.198-0.266c2.961-1.374,3.493-4.719,2.503-7.272l-8.152-22.037 c-0.935-3-3.111-4.505-6.136-4.252c-1.568,0.134-2.731,1.515-2.598,3.082C45.149,14.709,46.518,15.865,48.097,15.739z"></path><path class="st0" d="M79.297,82.402c-0.534-0.539-1.26-0.843-2.019-0.845c-0.003,0-0.005,0-0.007,0 c-0.756,0-1.48,0.301-2.016,0.835c-0.507,0.506-0.895,0.949-1.257,1.363c-0.622,0.712-0.996,1.142-1.903,1.748 c-0.697,0.463-1.681,0.13-2.222-0.68l-22.249-33.52c-0.615-0.921-0.49-2.266,0.25-2.762c0.883-0.587,1.017-0.636,1.66-0.863 c0.447-0.159,1.057-0.375,2.029-0.788c1.419-0.602,2.103-2.221,1.544-3.657L41.862,14.338c-0.285-0.731-0.858-1.313-1.585-1.608 c-0.729-0.294-1.544-0.276-2.257,0.05c-3.831,1.753-7.168,4.017-10.226,6.945c-3.212,3.148-6.564,7.769-7.799,10.745 c-0.172,0.412-0.243,0.859-0.21,1.304c0.908,12.188,9.079,31.691,20.329,48.529c11.075,16.58,26.313,31.943,37.057,37.36 c0.398,0.2,0.838,0.305,1.283,0.305h0.003c4.213-0.004,9.75-2.174,11.962-3.118c4.092-1.797,8.318-4.367,10.518-6.397 c0.568-0.524,0.899-1.257,0.917-2.03s-0.28-1.52-0.824-2.069L79.297,82.402z"></path><path class="st0" d="M106.854,94.795c-0.063-0.078-0.132-0.152-0.204-0.223L89.336,77.573c-1.947-1.847-5.317-2.623-7.724-0.427 c-1.163,1.061-1.245,2.864-0.184,4.025c0.987,1.081,2.615,1.229,3.772,0.391c0.067,0.033,0.136,0.074,0.177,0.112l17.089,16.778 c0.078,0.19,0.109,0.616-0.062,0.926c-0.76,1.379-0.259,3.112,1.119,3.873c0.437,0.24,0.908,0.354,1.374,0.354 c1.005,0,1.979-0.532,2.498-1.474C108.674,99.816,108.447,96.73,106.854,94.795z"></path>
                             </svg>
                         </div>
-                            <span class="footer-info__text">+375 (44) 772-91-63</span>
+                        <span class="footer-info__text">+375 (44) 772-91-63</span>
                     </div>
                     <div class="footer-info-block">
                         <div class="footer-info-svg">
-                            <svg class="footer-info__svg svgicon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path class="st0" d="M83.08,55.408c-5.939,3.866-11.879,7.733-17.818,11.6c-0.023,0.015-0.045,0.021-0.068,0.035 c-0.133,0.088-0.273,0.161-0.422,0.219c-0.008,0.003-0.014,0.007-0.021,0.01c-0.113,0.043-0.23,0.071-0.352,0.094 c-0.061,0.013-0.119,0.03-0.178,0.037c-0.008,0.001-0.014,0-0.02,0.001c-0.535,0.062-1.029-0.096-1.443-0.386 c-0.008-0.004-0.014-0.006-0.02-0.01c-5.875-3.745-11.752-7.49-17.627-11.234c-9.143,14.371-18.285,28.743-27.428,43.115 c0.23,0.018,0.461,0.035,0.695,0.035h91.24c0.416,0,0.824-0.038,1.225-0.093C101.59,84.356,92.334,69.883,83.08,55.408z"></path><path class="st0" d="M87.268,52.683c9.398,14.696,18.793,29.392,28.191,44.088c1.951-1.658,3.195-4.125,3.195-6.88V38.11 c0-1.81-0.541-3.494-1.461-4.909C107.219,39.695,97.242,46.188,87.268,52.683z"></path><path class="st0" d="M40.898,53.088C30.764,46.629,20.631,40.17,10.496,33.71c-0.73,1.304-1.15,2.803-1.15,4.4v51.78 c0,2.928,1.406,5.527,3.572,7.179C22.244,82.409,31.57,67.748,40.898,53.088z"></path><path class="st0" d="M63.986,61.879c16.41-10.684,32.822-21.367,49.232-32.05c-1.104-0.481-2.32-0.753-3.6-0.753h-91.24 c-1.521,0-2.953,0.382-4.213,1.049C30.773,40.709,47.379,51.294,63.986,61.879z"></path>
+                            <svg class="footer-info__svg svgicon" xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 128 128"><path class="st0" d="M83.08,55.408c-5.939,3.866-11.879,7.733-17.818,11.6c-0.023,0.015-0.045,0.021-0.068,0.035 c-0.133,0.088-0.273,0.161-0.422,0.219c-0.008,0.003-0.014,0.007-0.021,0.01c-0.113,0.043-0.23,0.071-0.352,0.094 c-0.061,0.013-0.119,0.03-0.178,0.037c-0.008,0.001-0.014,0-0.02,0.001c-0.535,0.062-1.029-0.096-1.443-0.386 c-0.008-0.004-0.014-0.006-0.02-0.01c-5.875-3.745-11.752-7.49-17.627-11.234c-9.143,14.371-18.285,28.743-27.428,43.115 c0.23,0.018,0.461,0.035,0.695,0.035h91.24c0.416,0,0.824-0.038,1.225-0.093C101.59,84.356,92.334,69.883,83.08,55.408z"></path><path class="st0" d="M87.268,52.683c9.398,14.696,18.793,29.392,28.191,44.088c1.951-1.658,3.195-4.125,3.195-6.88V38.11 c0-1.81-0.541-3.494-1.461-4.909C107.219,39.695,97.242,46.188,87.268,52.683z"></path><path class="st0" d="M40.898,53.088C30.764,46.629,20.631,40.17,10.496,33.71c-0.73,1.304-1.15,2.803-1.15,4.4v51.78 c0,2.928,1.406,5.527,3.572,7.179C22.244,82.409,31.57,67.748,40.898,53.088z"></path><path class="st0" d="M63.986,61.879c16.41-10.684,32.822-21.367,49.232-32.05c-1.104-0.481-2.32-0.753-3.6-0.753h-91.24 c-1.521,0-2.953,0.382-4.213,1.049C30.773,40.709,47.379,51.294,63.986,61.879z"></path>
                             </svg>
                         </div>
-                            <span class="footer-info__text">hr@creacept.by</span>
+                        <span class="footer-info__text">hr@creacept.by</span>
                     </div>
 
                 </div>
             </div>
             <div class="col-12 col-lg-4">
                 <div class="footer-block__social">
-                        <div class="footer-social-block">
-                            <span class="footer__title">Мы в соцсетях</span>
-                            <a href="" class="footer-social__link svg__telegram-bubble">
-                                <svg class="svg svg__telegram" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) --><path d="M446.7 98.6l-67.6 318.8c-5.1 22.5-18.4 28.1-37.3 17.5l-103-75.9-49.7 47.8c-5.5 5.5-10.1 10.1-20.7 10.1l7.4-104.9 190.9-172.5c8.3-7.4-1.8-11.5-12.9-4.1L117.8 284 16.2 252.2c-22.1-6.9-22.5-22.1 4.6-32.7L418.2 66.4c18.4-6.9 34.5 4.1 28.5 32.2z"/></svg>
-                            </a>
-                            <a href="" class="footer-social__link svg__instagram-bubble">
-                                <svg class="svg svg__instagram" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) --><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
-                            </a>
-                            <a href="" class="footer-social__link svg__linkedin-bubble">
-                                <svg class="svg svg__linkedin" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) --><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg>
-                            </a>
-                            <a href="" class="footer-social__link svg__vk-bubble">
-                                <svg class="svg svg__vk" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) --><path d="M545 117.7c3.7-12.5 0-21.7-17.8-21.7h-58.9c-15 0-21.9 7.9-25.6 16.7 0 0-30 73.1-72.4 120.5-13.7 13.7-20 18.1-27.5 18.1-3.7 0-9.4-4.4-9.4-16.9V117.7c0-15-4.2-21.7-16.6-21.7h-92.6c-9.4 0-15 7-15 13.5 0 14.2 21.2 17.5 23.4 57.5v86.8c0 19-3.4 22.5-10.9 22.5-20 0-68.6-73.4-97.4-157.4-5.8-16.3-11.5-22.9-26.6-22.9H38.8c-16.8 0-20.2 7.9-20.2 16.7 0 15.6 20 93.1 93.1 195.5C160.4 378.1 229 416 291.4 416c37.5 0 42.1-8.4 42.1-22.9 0-66.8-3.4-73.1 15.4-73.1 8.7 0 23.7 4.4 58.7 38.1 40 40 46.6 57.9 69 57.9h58.9c16.8 0 25.3-8.4 20.4-25-11.2-34.9-86.9-106.7-90.3-111.5-8.7-11.2-6.2-16.2 0-26.2.1-.1 72-101.3 79.4-135.6z"/></svg>
-                            </a>
-                        </div>
+                    <span class="footer__title">Мы в соцсетях</span>
+                    <div class="footer-social-block">
+                        <a href="" class="footer-social__link svg__telegram-bubble">
+                            <svg class="svg svg__telegram" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="18" height="21"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) --><path d="M446.7 98.6l-67.6 318.8c-5.1 22.5-18.4 28.1-37.3 17.5l-103-75.9-49.7 47.8c-5.5 5.5-10.1 10.1-20.7 10.1l7.4-104.9 190.9-172.5c8.3-7.4-1.8-11.5-12.9-4.1L117.8 284 16.2 252.2c-22.1-6.9-22.5-22.1 4.6-32.7L418.2 66.4c18.4-6.9 34.5 4.1 28.5 32.2z"/></svg>
+                        </a>
+                        <a href="" class="footer-social__link svg__instagram-bubble">
+                            <svg class="svg svg__instagram" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="18" height="21"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) --><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+                        </a>
+                        <a href="" class="footer-social__link svg__linkedin-bubble">
+                            <svg class="svg svg__linkedin" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="18" height="21" ><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) --><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg>
+                        </a>
+                        <a href="" class="footer-social__link svg__vk-bubble">
+                            <svg class="svg svg__vk" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="26" height="23" ><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) --><path d="M545 117.7c3.7-12.5 0-21.7-17.8-21.7h-58.9c-15 0-21.9 7.9-25.6 16.7 0 0-30 73.1-72.4 120.5-13.7 13.7-20 18.1-27.5 18.1-3.7 0-9.4-4.4-9.4-16.9V117.7c0-15-4.2-21.7-16.6-21.7h-92.6c-9.4 0-15 7-15 13.5 0 14.2 21.2 17.5 23.4 57.5v86.8c0 19-3.4 22.5-10.9 22.5-20 0-68.6-73.4-97.4-157.4-5.8-16.3-11.5-22.9-26.6-22.9H38.8c-16.8 0-20.2 7.9-20.2 16.7 0 15.6 20 93.1 93.1 195.5C160.4 378.1 229 416 291.4 416c37.5 0 42.1-8.4 42.1-22.9 0-66.8-3.4-73.1 15.4-73.1 8.7 0 23.7 4.4 58.7 38.1 40 40 46.6 57.9 69 57.9h58.9c16.8 0 25.3-8.4 20.4-25-11.2-34.9-86.9-106.7-90.3-111.5-8.7-11.2-6.2-16.2 0-26.2.1-.1 72-101.3 79.4-135.6z"/></svg>
+                        </a>
+                    </div>
                     <a href="#" class="footer-social__link-home">
                         <svg width="274" viewBox="0 0 1120 139" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <mask id="path-1-inside-1_79_25" fill="white">

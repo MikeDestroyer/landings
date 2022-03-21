@@ -1,11 +1,11 @@
 .hero {
+  position: relative;
   background: url("../assets/images/background.png");
   background-position: center;
   height: 650px;
   color: $white;
   & > .container {
     position: relative !important;
-    top: -100%;
     z-index: 2;
   };
   &-block {

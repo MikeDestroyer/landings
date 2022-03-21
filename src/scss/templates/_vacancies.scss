@@ -14,3 +14,13 @@
   line-height: 1.5999999999999999 !important;
   letter-spacing: 0.1142857142857143em !important;
 }
+
+@media (max-width: 991.98px) {
+  .vacancies {
+    padding-bottom: 0;
+    &__title{
+      text-align: center;
+      font-size: 28px;
+    }
+  }
+}
