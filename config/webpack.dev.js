@@ -51,13 +51,13 @@ module.exports = {
         template: path.resolve(__dirname, '../src/index.html'),
             title: "CREACEPT",
             filename: 'index.html',
-        favicon: './src/static/favicon.png',
+        favicon: './src/static/favicon.ico',
         }),
         new HtmlWebpackPlugin({
             template: path.resolve(__dirname, '../src/thankyou.html'),
             title: "Страница благодарности — CREACEPT",
             filename: 'thankyou.html',
-            favicon: './src/static/favicon.png',
+            favicon: './src/static/favicon.ico',
         }
     )],
 
