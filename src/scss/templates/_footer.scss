@@ -49,6 +49,11 @@
         & > svg {
           position: relative;
         }
+        &:hover {
+          & svg {
+            fill: $white !important;
+          }
+        }
       }
   }
   &-block {
@@ -84,9 +89,6 @@
 
 }
 .svg {
-  &:hover {
-    fill: $white;
-  }
   &__telegram {
     top: 5px;
     left: -1px;
@@ -98,11 +100,12 @@
     }
   }
   &__instagram {
-    top: 6px;
+    top: 5px;
     fill: #e32d46;
     &-bubble {
       &:hover {
         background: #e32d46;
+
       }
     }
   }
