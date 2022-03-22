@@ -1,7 +1,6 @@
 const path = require('path')
 const MiniCssExtractPlugin = require("mini-css-extract-plugin")
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
-const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const {CleanWebpackPlugin} = require("clean-webpack-plugin")
 
@@ -41,8 +40,8 @@ module.exports = {
                 ],
             },
             {
-                test: /\.(jpe?g|png|gif|svg|mp4)$/i,
-                type: "asset",
+                test: /\.(jpe?g|png|gif|svg|webm|webp)$/i,
+                type: "asset/resource",
                 generator: {
                     filename: 'media/[hash][ext][query]'
                 }
@@ -61,20 +60,7 @@ module.exports = {
             // For webpack@5 you can use the `...` syntax to extend existing minimizers (i.e. `terser-webpack-plugin`), uncomment the next line
             `...`,
             new CssMinimizerPlugin(),
-            new ImageMinimizerPlugin({
-                minimizer: {
-                    implementation: ImageMinimizerPlugin.imageminMinify,
-                    options: {
-                        // Lossless optimization with custom option
-                        // Feel free to experiment with options for better result for you
-                        plugins: [
-                            ["gifsicle", { interlaced: true }],
-                            ["jpegtran", { progressive: true }],
-                            ["optipng", { optimizationLevel: 5 }],
-                        ],
-                    },
-                },
-            }),
+
         ],
     },
     plugins: [
