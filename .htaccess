@@ -1,0 +1,8 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} !^creacept\.by$ [NC]
+RewriteRule ^(.*)$ https://creacept.by/$1 [L,R=301]
+
+Options -Indexes
+Options +MultiViews
+
+ErrorDocument 404 https://creacept.by/404.html
